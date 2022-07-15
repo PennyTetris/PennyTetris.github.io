@@ -19,6 +19,10 @@ document.addEventListener('DOMContentLoaded', () => {
     music.loop = true
     let lose = new Audio('game-over.wav')
     let scor = new Audio('score.wav')
+    const rotateBlock = document.querySelector('#rotateBlock')
+    const shiftLeft = document.querySelector('#shiftLeft')
+    const shiftRight = document.querySelector('#shiftRight')
+    const shiftDown = document.querySelector('#shiftDown')
 
 
 
@@ -100,6 +104,24 @@ function control(e) {
 }
 
 document.addEventListener('keyup',control)
+
+//on screen controls
+
+rotateBlock.addEventListener('click', () => {
+    rotate()
+})
+
+shiftLeft.addEventListener('click', () => {
+    moveLeft()
+})
+
+shiftDown.addEventListener('click', () => {
+    moveDown()
+})
+
+shiftRight.addEventListener('click', () => {
+    moveRight()
+})
 
 
 //move down function
@@ -239,6 +261,8 @@ function gameOver() {
 
     }
 }
+
+
 
 
 
