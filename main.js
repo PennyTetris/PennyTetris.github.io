@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'teal'
     ]
     let music = new Audio('Tetris.mp3')
+    music.loop = true
     let lose = new Audio('game-over.wav')
     let scor = new Audio('score.wav')
 
