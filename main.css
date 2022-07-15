@@ -31,7 +31,7 @@
 
 .right{
     display: grid;
-    padding-left: 30px;
+    padding-left: 20px;
     
 }
 
@@ -134,9 +134,9 @@ html{
     text-align: center;
     justify-content: center;
     background-color: var(--gridBg);
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
     box-shadow: var(--box-shadow);
     border-radius: 5px;
     border: none;
