@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+:root{
+    --mainBg: rgb(183, 215, 228);
+    --gridBg: rgb(211, 156, 228);
+    --gridSecondaryBg: rgba(255, 192, 243, 0.402);
+    --box-shadow: 8px 6px 10px -6px rgba(0,0,0,0.75);
+}
+
+button{
+    border: none;
+    background-color: var(--gridBg);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+button i{
+    color: black;
+    font-size: 40px;
+}
+
+
+.wrapper{
+    display: grid;
+    grid-template-areas: "title"
+                         "container";
+    justify-content: center;
+}
+
+.right{
+    display: grid;
+    padding-left: 30px;
+    
+}
+
+.right h3{
+    text-align: center;
+    font-family: 'Monoton', cursive;
+    font-weight: 300;
+    font-size: 28px;
+}
+
+.title{
+    text-align: center;
+    font-family: 'Monoton', cursive;
+    font-size: 90px;
+    font-weight: 100;
+}
+html{
+    background-color: var(--mainBg);
+}
+
+.container {
+    display: flex;
+}
+
+#score{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+}
+
+.grid{
+    width: 218px;
+    height: 438px;
+    background-color: var(--gridBg);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    padding: 2px;
+    box-shadow: var(--box-shadow);
+}
+
+.grid div {
+    height: 20px;
+    width: 20px;
+    background-color: var(--gridSecondaryBg);
+}
+
+.right a{
+    width: 100%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.boundary {
+    background-color: transparent !important;
+}
+
+
+.mini-grid {
+    width: 86px;
+    height: 86px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--gridBg);
+    gap: 2px;
+    padding: 2px;
+    box-shadow: var(--box-shadow);
+
+}
+
+.mini-grid div {
+    height: 20px;
+    width: 20px;
+    background-color: var(--gridSecondaryBg);
+}
