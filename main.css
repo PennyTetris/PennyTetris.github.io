@@ -18,7 +18,7 @@
 
 #start-button i{
     color: black;
-    font-size: 40px;
+    font-size: 25px;
 }
 
 
@@ -31,7 +31,7 @@
 
 .right{
     display: grid;
-    padding-left: 20px;
+    padding: 0 20px;
     
 }
 
