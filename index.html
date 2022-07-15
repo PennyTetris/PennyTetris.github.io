@@ -13,7 +13,7 @@
     <div class="title">
         Tetris
     </div>
-    
+    <h3>SCORE : <span id="score">0</span></h3>
     <div class="container">
         <div class="grid">
             <div></div>
@@ -248,10 +248,14 @@
                 <div></div>
 
             </div>
-
-            <h3>Score :<br> <span id="score">0</span></h3>
+            <a href="">RESET GAME</a>           
             <button id="start-button"><i class="fas fa-play"></i><i class="fas fa-pause"></i></button>
-            <a href="">RESET GAME</a>
+            <div class="controller">
+                <div class="shiftLeft"><button id="shiftLeft"><i class="fas fa-chevron-left"></i></button></div>
+                <div class="rotateBlock"><button id="rotateBlock"><i class="fas fa-redo"></i></button></div>
+                <div class="shiftDown"><button id="shiftDown"><i class="fas fa-chevron-down"></i></button></div>
+                <div class="shiftRight"><button id="shiftRight"><i class="fas fa-chevron-right"></i></button></div>
+            </div>
         </div>
 
     </div>
